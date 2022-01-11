@@ -16,15 +16,16 @@ body {
 
 .main {
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 50px;
    text-align: center;
    font-size: 70px;
    color: rgb(114, 114, 114);
 }
 
 .button {
-  font-size: 70px;
-  width: 70px;
+  font-size: 50px;
+  width: 50px;
+  cursor: pointer;
   
 }
 
@@ -36,4 +37,16 @@ body {
   text-align: right;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 40px;
+}
+.save-btn, .my-quotes, .goback {
+  all: unset;
+  font-size: 22px;
+  padding: 10px 22px;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.link {
+    text-decoration: none;
 }
