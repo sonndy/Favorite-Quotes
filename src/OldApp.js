@@ -3,7 +3,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import Quote from './components/Quote';
 
 
-function OldApp() {
+function OldApp({saveQuote, setSaveQuote}) {
   const QuotesUrl = "https://type.fit/api/quotes";
   const [quotes, setQuotes] = useState([])
   const [index, setIndex] = useState(0);
@@ -55,7 +55,7 @@ function OldApp() {
     
     return (
     <div className="App">
-      <Quote quotes={quotes} index={index} nextQuote={nextQuote} previousQuote={previousQuote}/>
+      <Quote quotes={quotes} index={index} nextQuote={nextQuote} previousQuote={previousQuote} saveQuote={saveQuote} setSaveQuote={setSaveQuote} />
     </div>
   );
   }

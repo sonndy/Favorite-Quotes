@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 
-const Quote = ({quotes, index, nextQuote, previousQuote})=> {
-    const [saveQuote, setSaveQuote] = useState([])
+const Quote = ({quotes, index, nextQuote, previousQuote, saveQuote, setSaveQuote})=> {
 
     const newSaveQuote = () => {
         saveQuote.push(quotes[index])
@@ -24,6 +24,7 @@ const Quote = ({quotes, index, nextQuote, previousQuote})=> {
                     }}>Previous</button>
                     <button onClick={newSaveQuote}>Save Quote</button>
                     {console.log(saveQuote)}
+                    <Link to="/savequotes"><button>My Save quotes</button></Link>
                 </div>
             </div>
     )
