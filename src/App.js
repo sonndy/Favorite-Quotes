@@ -13,7 +13,7 @@ const App = () => {
         <Router>
             <Routes>
                 <Route exact path="/" element={<OldApp saveQuote={saveQuote} setSaveQuote={setSaveQuote}/>}></Route>
-                 <Route exact path="/savequotes" element={<SaveQuote saveQuote={saveQuote}/>}/>
+                <Route exact path="/savequotes" element={<SaveQuote saveQuote={saveQuote}/>}/>
             </Routes>
         </Router>
     )

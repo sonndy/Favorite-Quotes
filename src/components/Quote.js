@@ -14,7 +14,11 @@ const Quote = ({quotes, index, nextQuote, previousQuote, saveQuote, setSaveQuote
     return(
 
             <div className='main'>
-                <p>{quotes[index].text}</p>
+                <div className='name-author'>
+                    <p>{quotes[index].text}</p> 
+                    <p>{quotes[index].author}</p> 
+                </div>
+                
                 <div className='buttons'>
                     <button onClick={()=> {
                         nextQuote(index);

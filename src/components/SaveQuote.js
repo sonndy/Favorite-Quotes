@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const SaveQuote = ({saveQuote}) => {
+    
     return (
         <div>
             <h1>Sonndy is the best</h1>
